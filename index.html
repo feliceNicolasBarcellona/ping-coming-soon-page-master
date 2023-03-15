@@ -5,6 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="style.desktop.css">
+  <link rel="stylesheet" href="style-tablet-portrait.css">
+  <link rel="stylesheet" href="style-mobile.css">
+
   <script src="https://kit.fontawesome.com/fb3d746204.js" crossorigin="anonymous"></script>
 
   <title>Frontend Mentor | Ping coming soon page</title>
@@ -13,20 +19,36 @@
 
 </head>
 <body>
-  
-  We are launching soon!
-
-  Subscribe and get notified
-
-  Notify Me
-
-  &copy; Copyright Ping. All rights reserved.
+  <main>
+    <div class="container">
+      <img class="logo" src="images/logo.svg" alt="">
+      <h2 class="description">We are launching <span>soon!</span></h2>
+      <h3 class="cta">Subscribe and get notified</h3>
+      <form novalidate> 
+        <div class="input-container">
+          <input type="text" id="mail" name="mail" placeholder="Your email address..." required>
+          <p class="error-message"></p> 
+        </div>
+        <button type="submit" class="btn">Notify Me</button>
+      </form>
+      <img class="illustration-dashboard" src="images/illustration-dashboard.png" alt="">
+      <div class="social">
+        <ul style="display: flex;">
+          <li><a href="https://it-it.facebook.com/" aria-label="facebook"><i class="fab fa-facebook-f fa-xs" aria-hidden="true"></i></a></li>
+          <li style="margin: 0 11px;"><a href="https://twitter.com/?lang=it" aria-label="twitter"><i class="fab fa-twitter fa-xs" aria-hidden="true"></i></li>
+          <li><a href="https://www.instagram.com/" aria-label="instagram"><i class="fab fa-instagram fa-xs" aria-hidden="true"></i></a></li>
+        </ul>
+      </div>
+       <p class="copyright">&copy; Copyright Ping. All rights reserved.</p>
+    </div>
+  </main>
 
   <footer>
     <p class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
+      Coded by <a href="#">Felice Nicolas Barcellona</a>.
     </p>
   </footer>
+  <script src="script.js"></script>
 </body>
 </html>

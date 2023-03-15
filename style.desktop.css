@@ -24,5 +24,153 @@ body {
   font-family: var(--font-family);
 }
 
+main {
+  max-width: 72rem;
+  height: auto;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  width: 32.15rem;
+  height: 100%;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.logo {
+  margin-top: 4.25rem;
+  height: 1.25rem;
+  width: 4.4rem;
+}
+
+.description {
+  font-size: 2.43rem;
+  color: hsl(0, 0%, 59%);
+  font-weight: 300;
+  margin: 2.6rem 0 1.2rem;
+}
+
+.description span {
+  font-weight: 700; 
+  color: hsl(0, 0%, 0%);
+}
+
+form {
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.input-container {
+  width:66.3%;
+  text-align: left;
+  height: 75px;
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  width: 100%;
+  height: 2.75rem;
+  border-radius: 1.5rem;
+  border: 1px solid hsl(223, 100%, 88%);
+  font-size: 0.85rem;
+  padding-left: 1.4rem;
+}
+
+input:focus {
+  outline: none;
+}
+
+input.invalid {
+  border: 1px solid var(--light-red);
+}
+
+input::placeholder {
+  color: var(--pale-blue);
+  font-family: var(--font-family);
+  font-size: 16.5px;
+  position: absolute;
+  top: 0.825rem;
+}
+
+.error-message {
+  color: var(--light-red);
+  font-size: 0.6rem;
+  font-style: italic;
+  margin-left: 1.5rem;
+  margin-top: 0.45rem;
+}
+
+.btn {
+  width: 31.4%;
+  height: 2.75rem;
+  border: none;
+  background-color: hsl(223, 87%, 63%);
+  color: hsl(0, 0%, 100%);
+  border-radius: 30px;
+  font-size: 18px;
+  box-shadow: -8px 8px 10px hsla(223, 87%, 63%, 0.2);
+}
+
+.btn:hover {
+  cursor: pointer;
+  background-color: hsla(223, 87%, 63%, 0.750);
+}
+
+.illustration-dashboard {
+  width: 100%;
+  display: block;
+  margin-top: 75px;
+}
+
+.social {
+  margin-top: 3.6rem;
+}
+
+i {
+  border: 1px solid var(--pale-blue);
+  border-radius: 50%;
+}
+
+.fab {
+  color: var(--blue);
+}
+
+.fa-facebook-f {
+  padding: 0.72rem 0.5157rem;
+}
+
+.fa-twitter {
+  padding: 0.72rem 0.375rem;
+}
+
+.fa-instagram {
+  padding: 0.72rem 0.4225rem;
+}
+
+i:hover {
+  background-color: var(--blue);
+  border: 1px solid var(--blue);
+}
+
+.fab:hover {
+  color: hsl(0, 0%, 100%);
+}
+
+.copyright {
+  font-size: 0.6rem;
+  margin-top: 1.35rem;
+  color:  hsl(0, 0%, 59%);
+  margin-bottom: 2.45rem;
+}
+
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }

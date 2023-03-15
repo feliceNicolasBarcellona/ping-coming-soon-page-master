@@ -31,8 +31,8 @@
     width: 100%;
   }
 
-  .fab {
-    font-size: 30px;
+  .fa-xs {
+    font-size: 25px !important;
   }
 
   .fa-facebook-f {

@@ -135,6 +135,10 @@ input::placeholder {
   margin-top: 3.6rem;
 }
 
+.d-flex{
+  display: flex;
+}
+
 i {
   border: 1px solid var(--pale-blue);
   border-radius: 50%;
